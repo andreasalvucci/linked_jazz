@@ -1,0 +1,488 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz/"
+     xml:base="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:wot="http://xmlns.com/wot/0.1/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#acquaintanceOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#acquaintanceOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#knowsOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#attendedPerformanceOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#attendedPerformanceOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#knowsOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Music_Group"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#bandLeaderOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#bandLeaderOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#collaboratedWith"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Music_Group"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#collaboratedWith -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#collaboratedWith">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Agent"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Agent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#frequentedPlace -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#frequentedPlace">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#visitedPlace"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#friendOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#friendOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#knowsOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#grewUpWith -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#grewUpWith">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#knowsOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#hasMentor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#hasMentor">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#knowsOf"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#mentorOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#hasMet -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#hasMet">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#knowsOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#inMusicGroupWith -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#inMusicGroupWith">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#collaboratedWith"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#influencedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#influencedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Agent"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Agent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#knowsOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#knowsOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Agent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#knowsOfPlace -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#knowsOfPlace">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#visitedPlace"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#lifePartnerOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#lifePartnerOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#knowsOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#mentorOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#mentorOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#knowsOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#performedAt -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#performedAt">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Artwork"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Music_Group"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Event"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#playedUnder -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#playedUnder">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#collaboratedWith"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#playedWith -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#playedWith">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#collaboratedWith"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#recordedWith -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#recordedWith">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#collaboratedWith"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Music_Group"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Music_Group"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#residentOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#residentOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#studentOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#studentOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#knowsOf"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#teacherOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#teacherOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#teacherOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#knowsOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#touredWith -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#touredWith">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#collaboratedWith"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Music_Group"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#visitedPlace -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#visitedPlace">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Place"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Agent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Agent"/>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Artwork -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Artwork">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Work"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Dance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Dance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Artwork"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Education_Event -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Education_Event">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Event -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Event"/>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Exhibition_Event -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Exhibition_Event">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Film -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Film">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Artwork"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Fundraising_Event -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Fundraising_Event">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Group -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Group">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Music_Group -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Music_Group">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Group"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Painting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Painting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Artwork"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Performance_Event -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Performance_Event">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Person">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Photograph -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Photograph">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Artwork"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Place -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Place"/>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Screening_Event -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Screening_Event">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Sculpture -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Sculpture">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Artwork"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Social_event -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Social_event">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Sound_Installation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Sound_Installation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Artwork"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Work -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Work"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Dance"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Film"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Painting"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Photograph"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Sculpture"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Sound_Installation"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Education_Event"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Exhibition_Event"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Fundraising_Event"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Performance_Event"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Screening_Event"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/andre/ontologies/2024/1/linked_jazz#Social_event"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
